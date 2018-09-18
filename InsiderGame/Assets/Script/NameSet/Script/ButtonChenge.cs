@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class ButtonChenge : MonoBehaviour {
+public class ButtonChenge : MonoBehaviour
+{
 
     public GameObject NameManager;
     public int ButtonNameCount;
@@ -16,25 +17,39 @@ public class ButtonChenge : MonoBehaviour {
 
     public bool fildflg;
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         ButtonText = this.GetComponent<Text>();
         NameSetScript = NameManager.GetComponent<NameInputField>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         charjudge();
-        for(int i = 0; i < NameSetScript.Provisional; i++)
+        for (int i = 0; i < NameSetScript.Provisional; i++)
         {
-            if (NameSetScript.PlayerName[i] == NameSetScript.inputfield[i].text)
+            for (int k = 0; k < NameSetScript.Provisional; k++)
             {
-                fildflg = true;
-            }
-            else
-            {
-                fildflg = false;
-            }
+                if (i != k)
+                {
+                    if (NameSetScript.PlayerName[i] == NameSetScript.inputfield[k].text)
+                    {
+                        fildflg = false;
+                    }
+                }
+                else
+                {
+                    if (NameSetScript.PlayerName[i] == NameSetScript.inputfield[i].text)
+                    {
+                        fildflg = true;
+                    }
+                    else
+                    {
+                        fildflg = false;
+                    }
+                }
+            } 
             if (!fildflg) break;
         }
     }

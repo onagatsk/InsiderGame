@@ -10,7 +10,7 @@ public class NameInputField : NameSetManager
     public InputField[] inputfield = new InputField[10];
     public string[] InputName; //入力された名前
     public int InputCount;
-
+    public Text ButtonText;
     void Start()
     {
         
@@ -81,7 +81,7 @@ public class NameInputField : NameSetManager
                     SceneChengeCounter++;
                 }
             }
-            if(SceneChengeCounter == Provisional)
+            if(SceneChengeCounter == Provisional && ButtonText.text == "次へ")
             {
                 Debug.Log("シーン遷移");
             }

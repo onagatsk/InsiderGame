@@ -46,6 +46,10 @@ public class NumberInputFieldManager : MonoBehaviour {
                 InitInputField();
                 SceneManager.LoadScene("NameSet");
             }
+            else
+            {
+                InitInputField();
+            }
         }
     }
 }

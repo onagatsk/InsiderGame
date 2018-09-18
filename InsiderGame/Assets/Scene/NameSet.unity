@@ -1854,6 +1854,7 @@ MonoBehaviour:
   - {fileID: 1048590166}
   InputName: []
   InputCount: 0
+  ButtonText: {fileID: 68972924}
 --- !u!1001 &1817058295
 Prefab:
   m_ObjectHideFlags: 0
