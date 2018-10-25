@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scene/NumberSet.unity
     guid: ab06ba824a84afd4eae8ab1b2ca81720
   - enabled: 1
-    path: Assets/Scene/Main.unity
-    guid: 44278491da73a15498c01e3975ae0d8f
-  - enabled: 1
     path: Assets/Scene/NameSet.unity
     guid: 6963ea806656b9740bae53aa4eb3e1ad
+  - enabled: 1
+    path: Assets/Scene/RoleDecide.unity
+    guid: 4a1b454b233523f468dee8443701cd1c
+  - enabled: 1
+    path: Assets/Scene/JobDisplay.unity
+    guid: 7a848158ba64dce4a8b39cfd3ef58413
+  - enabled: 1
+    path: Assets/Scene/TimeSeting.unity
+    guid: c0ecd235ea05d09409368c51d25b702d
   m_configObjects: {}
